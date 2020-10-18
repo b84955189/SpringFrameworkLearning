@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       ">
+       <context:component-scan base-package="top.lking.dao;top.lking.service;top.lking.controller;top.lking.model">
+
+       </context:component-scan>
+       <import resource="classpath:module_1/*"></import>
+       <context:property-placeholder location="classpath:test.properties" file-encoding="utf-8"></context:property-placeholder>
+</beans>
