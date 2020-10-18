@@ -14,9 +14,9 @@ public class App {
         SimpleUserDaoImpl simpleUserDao = new SimpleUserDaoImpl();
         NormalUserDaoImpl normalUserDao = new NormalUserDaoImpl();
 
-        UserDao simpleProxy = userDaoProxy.createProxy(simpleUserDao);
-        UserDao normalProxy = userDaoProxy.createProxy(normalUserDao);
 
+        //UserDao normalProxy = userDaoProxy.createProxy(normalUserDao);
+        UserDao simpleProxy = userDaoProxy.createProxy(simpleUserDao);
         simpleProxy.deleteUser();
     }
 }
